@@ -2,20 +2,16 @@ import {inventory, MPN} from "./JS/inventory.js";
 
 const appleID = 2970325;
 const createButton = document.getElementById('create');
-const editButton = document.getElementById('edit');
-const testButton = document.getElementById('test');
-const testButton2 = document.getElementById('test-2');
-const testDiv = document.getElementById('view-content');
+const viewButton = document.getElementById('view');
+const listButton = document.getElementById('showList');
 const objArray = [];
 
-if (createButton && editButton) {
+if (createButton && viewButton) {
     createButton.addEventListener('click', () => {window.location.href="create.html";});
-    editButton.addEventListener('click', () => {window.location.href="edit.html";});
+    viewButton.addEventListener('click', () => {window.location.href="view.html";});
 }
-
-if (testButton && testButton2) {
-    testButton.addEventListener('click', createEmptyInventory);
-    testButton2.addEventListener('click', () => showArrayNames(createEmptyInventory()));
+if (listButton) {
+    listButton.addEventListener('click', () => showArrayNames(inventory));
 }
 
 // Create the class that will hold the information for the items in inventory
@@ -54,13 +50,14 @@ function createEmptyInventory() {
     return objArray[0];
 }
 
-// creates HTML elements for each item name in the inventory array
+// Create HTML list elements for each item name in the inventory array
 function showArrayNames(arr) {
-    for (let item of arr.invArray) {
-        let addTo = document.createElement("p");
-        addTo.className = 'names';
-        addTo.innerHTML = item.name + ' | ' + item.MPN + ' | ' + item.IFQ;
-        testDiv.appendChild(addTo);
+    for (let item of arr) {
+        let addTo = document.createElement("li");
+        let ulList = document.getElementById('viewList');
+        addTo.className = 'list-group-item';
+        ulList.appendChild(addTo);
+        addTo.innerHTML = item;
     }
 }
 
