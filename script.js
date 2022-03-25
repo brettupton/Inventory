@@ -1,12 +1,19 @@
-import inventoryObjectContainer from "./JS/inventory.js";
-
 const appleID = 2970325;
-const fullInventory = inventoryObjectContainer;
 const createButton = document.getElementById('create');
 const viewButton = document.getElementById('view');
 const addQuantityButton = document.getElementById('addQuantity');
 const updateArrayButton = document.getElementById('updateArray');
 const deleteButton = document.getElementById('deleteArray');
+let dataArray;
+
+// Get data from json, assign the data to dataArray, and load the initial table
+fetch("./js/inventory.json")
+  .then(response => response.json())
+  .then(json => {
+      dataArray = json;
+      showArrayNames(dataArray);
+  });
+
 
 if (createButton && viewButton) {
     createButton.addEventListener('click', () => {window.location.href="create.html";});
@@ -14,9 +21,8 @@ if (createButton && viewButton) {
 }
 if (window.location.pathname === "/view.html") {
     addQuantityButton.addEventListener('click', addToItem);
-    showArrayNames(fullInventory);
     updateArrayButton.addEventListener('click', function() {
-        updateArray(fullInventory);
+        updateArray(dataArray);
     });
 }
 
@@ -36,26 +42,28 @@ class inventoryItem {
 }
 
 // Create HTML table elements for each item in the inventory array
-function showArrayNames(arr) {
+function showArrayNames(obj) {
     let itemNumber = 0;
     const tableBody = document.getElementById('tableBody');
-    for (let item of arr) {
+    for (let item of obj.inventory) {
         itemNumber++;
         let tr = document.createElement('tr');
         tr.innerHTML = '<td>' + itemNumber + '</td>' +
-        '<td>' + item.itemName + '</td>' +
-        '<td>' + item.partNumber + '</td>' +
-        '<td>' + item.quantity + '</td>';
+        '<td>' + item.Name + '</td>' +
+        '<td>' + item.MPN + '</td>' +
+        '<td>' + item.UPC + '</td>' +
+        '<td>' + item.Quantity + '</td>';
         tableBody.appendChild(tr);
     }
 }
 
+// Get input from user and set new quantity on chosen item ID
 function addToItem() {
     const newQuantity = document.getElementById('newQuantity');
     const inventoryNum = document.getElementById('itemNum');
-    if (inventoryNum.value >= 1 && inventoryNum.value <= fullInventory.length) {
+    if (inventoryNum.value >= 1 && inventoryNum.value <= dataArray.inventory.length) {
         if (newQuantity.value < 200) {
-            fullInventory[(inventoryNum.value)-1].quantity = parseInt(newQuantity.value);
+            dataArray.inventory[(inventoryNum.value)-1].Quantity = parseInt(newQuantity.value);
         } else {
             alert('That number is too large. I only accept values less than 200.');
         }
@@ -64,6 +72,7 @@ function addToItem() {
     }
 }
 
+// Deletes current HTML content from table and calls the showArrayNames function
 function updateArray(arr) {
     const tableBody = document.querySelector('tbody');
     tableBody.innerHTML = '';

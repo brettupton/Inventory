@@ -1,0 +1,1042 @@
+{
+    "inventory" : [
+        {	
+            "Name":	"AirPods with Charging Case",
+            "UPC":	190199098428,
+            "MPN":	"MV7N2AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"AirPods with Wireless Charging Case",
+            "UPC":	190198764690,
+            "MPN":	"MRXJ2AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"AirPods Pro with Wireless Charging Case",
+            "UPC":	null,
+            "MPN":	"MWP22AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"AirPods Pro with Magsafe Charging Case",
+            "UPC":	194252721247,
+            "MPN":	"MLWK2AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"AirPods (3rd Gen)",
+            "UPC":	194252818381,
+            "MPN":	"MME73AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"AirPods Max with Smart Case",
+            "UPC":	null,
+            "MPN":	"MGYH3AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Wireless Charging Case for AirPods",
+            "UPC":	190198659408,
+            "MPN":	"MR8U2AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"EarPods with Lightning Connector",
+            "UPC":	190198001696,
+            "MPN":	"MMTN2AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"EarPods with 3.5mm",
+            "UPC":	190198107022,
+            "MPN":	"MNHF2AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"USB-C to 3.5mm Headphone Jack",
+            "UPC":	190198886804,
+            "MPN":	"MU7E2AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Lightning to 3.5mm Headphone Jack",
+            "UPC":	190198001757,
+            "MPN":	"MMX62AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"USB-C to VGA",
+            "UPC":	888462074995,
+            "MPN":	"MJ1L2AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Thunderbolt 3 (USB-C) to Thunderbolt 2",
+            "UPC":	888462859158,
+            "MPN":	"MMEL2AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"USB-C to SD",
+            "UPC":	190198905000,
+            "MPN":	"MUFG2AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"USB-C To Digital AV",
+            "UPC":	190198914392,
+            "MPN":	"MUF82AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"USB-C to MagSafe 3",
+            "UPC":	194252750780,
+            "MPN":	"MLYV3AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"USB-C Charge Cable (1m)",
+            "UPC":	194252750575,
+            "MPN":	"MM093AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"USB-C Charge Cable (2m)",
+            "UPC":	888462698405,
+            "MPN":	"MLL82AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"DNR USB-C to Lightning (1m)",
+            "UPC":	190199370340,
+            "MPN":	"MX0K2AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"USB-C to Lightning (1m)",
+            "UPC":	194252750841,
+            "MPN":	"MM0A3AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"USB-C to Lightning (2m)",
+            "UPC":	190198496164,
+            "MPN":	"MQGH2AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"LIghtning to USB (1m)",
+            "UPC":	190199534827,
+            "MPN":	"MXLY2AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Lightning to USB (2m)",
+            "UPC":	888462322997,
+            "MPN":	"MD819AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"5W Power Adapter",
+            "UPC":	885909627301,
+            "MPN":	"MD810LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"12W Power Adapter",
+            "UPC":	194252024966,
+            "MPN":	"MGN03AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"20W Power Adapter",
+            "UPC":	194252156940,
+            "MPN":	"MHJA3AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"MagSafe Charger",
+            "UPC":	194252192375,
+            "MPN":	"MHXH3AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Thunderbolt 3 (USB-C)",
+            "UPC":	190198441997,
+            "MPN":	"MQ4H2AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"MagSafe Duo Charger",
+            "UPC":	4184211220061,
+            "MPN":	"MHXF3AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Magnetic Charging Dock",
+            "UPC":	888462677806,
+            "MPN":	"MLDW2AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Magnetic Charging to USB",
+            "UPC":	190199291027,
+            "MPN":	"MX2E2AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Magnetic Fast Charging to USB-C",
+            "UPC":	194252711163,
+            "MPN":	"MLWJ3AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"45W MagSafe 2 Power Adapter",
+            "UPC":	885909611560,
+            "MPN":	"MD592LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"60W MagSafe 2 Power Adapter",
+            "UPC":	885909575725,
+            "MPN":	"MD565LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"85W MagSafe 2 Power Adapter",
+            "UPC":	885909611461,
+            "MPN":	"MD506LL/A",
+            "Quantity":	0
+            },	
+            {
+            "Name":	"45W MagSafe Power Adapter",
+            "UPC":	885909431267,
+            "MPN":	"MC747LL/A",
+            "Quantity":	0
+            },
+            {
+            "Name":	"60W MagSafe Power Adapter",
+            "UPC":	885909377794,
+            "MPN":	"MC461LL/A",
+            "Quantity":	0
+            },
+            {
+            "Name":	"60W MagSafe Power Adapter",
+            "UPC":	885909377794,
+            "MPN":	"MC461LL/A",
+            "Quantity":	0
+            },
+            {	
+            "Name":	"85W MagSafe Power Adapter",
+            "UPC":	885909454396,
+            "MPN":	"MC556LL/B",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"61W Power Adapter USC-C",
+            "UPC":	190198762283,
+            "MPN":	"MRW22LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"67W Power Adapter USB-C",
+            "UPC":	194252897300,
+            "MPN":	"MKU63AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"96W Power Adapter USB-C",
+            "UPC":	190199351301,
+            "MPN":	"MX0J2AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Magic Trackpad",
+            "UPC":	194252542422,
+            "MPN":	"MK2D3AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Magic Mouse",
+            "UPC":	194252542309,
+            "MPN":	"MK2E3AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Magic Keyboard Black for 11\" iPad",
+            "UPC":	190199599956,
+            "MPN":	"MXQT2LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Magic Keyboard White for 11\" iPad",
+            "UPC":	194252439067,
+            "MPN":	"MJQJ3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Smart Keyboard Folio Black",
+            "UPC":	190199568440,
+            "MPN":	"MX2E2AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"DNR Magic Keyboard",
+            "UPC":	888462650366,
+            "MPN":	"MLA22LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Smart Keyboard",
+            "UPC":	190199307001,
+            "MPN":	"MX3L2LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Magic Keyboard",
+            "UPC":	194252543276,
+            "MPN":	"MK2A3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Magic Keyboard w/ Number Pad",
+            "UPC":	190198383396,
+            "MPN":	"MQ052LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"World Travel Adapter Kit",
+            "UPC":	888462169363,
+            "MPN":	"MD837AM/A",
+            "Quantity":	"0"
+            },	
+            {	
+            "Name":	"Power Adapter Extension Cable",
+            "UPC":	888462315968,
+            "MPN":	"MK122LL/A",
+            "Quantity":	"0"
+            },	
+            {	
+            "Name":	"Magic Keyboard Black for 12.9\" iPad",
+            "UPC":	194252432938,
+            "MPN":	"MJQK3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Magic Keyboard White for 12.9\" iPad",
+            "UPC":	194252433539,
+            "MPN":	"MJQL3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Smart Keyboard Folio Black for 12.9\" iPad",
+            "UPC":	190199569027,
+            "MPN":	"MXNL2LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Apple Pencil",
+            "UPC":	888462313674,
+            "MPN":	"MK0C2AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Apple Pencil 2nd Gen",
+            "UPC":	190198893277,
+            "MPN":	"MU8F2AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Apple Pencil Tips",
+            "UPC":	888462756839,
+            "MPN":	"MLUN2AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad mini Smart Cover Black",
+            "UPC":	190199131439,
+            "MPN":	"MVQD2ZM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad mini Smart Cover Pink",
+            "UPC":	190199131491,
+            "MPN":	"MVQF2ZM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Smart Cover 9.7\" Blue",
+            "UPC":	null,
+            "MPN":	"MQ4P2ZM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Smart Cover 9.7\" Pink",
+            "UPC":	190199131378,
+            "MPN":	"MQ4Q2ZM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Smart Cover Pink",
+            "UPC":	null,
+            "MPN":	"MVQ42ZM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Thunderbolt to FireWire Adapter",
+            "UPC":	null,
+            "MPN":	"MD464LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Lightning to Digital AV",
+            "UPC":	null,
+            "MPN":	"MD826AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"USB-C to USB Adapter",
+            "UPC":	888462108416,
+            "MPN":	"MJ1M2AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"MagSafe to MagSafe 2 Converter",
+            "UPC":	888462313506,
+            "MPN":	"MD504LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"30-pin to USB Cable",
+            "UPC":	885909686896,
+            "MPN":	"MA591G/C",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Lightning to USB 3 Camera Adapter",
+            "UPC":	888462314527,
+            "MPN":	"MK0W2AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Lightning to VGA Adapter",
+            "UPC":	888462323055,
+            "MPN":	"MD825AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"AirTag (1 pack)",
+            "UPC":	190199320178,
+            "MPN":	"MX532AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"AirTag (4 pack)",
+            "UPC":	190199320260,
+            "MPN":	"MX542AM/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"HomePod Mini (Yellow)",
+            "UPC":	194252272022,
+            "MPN":	"MJ2E3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"HomePod Mini (Blue)",
+            "UPC":	194252271780,
+            "MPN":	"MJ2C3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"HomePod Mini (Orange)",
+            "UPC":	194252271902,
+            "MPN":	"MJ2D3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"HomePod Mini (White)",
+            "UPC":	190199710665,
+            "MPN":	"MY5H2LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"HomePod Mini (Space Gray)",
+            "UPC":	190199710405,
+            "MPN":	"MY5G2LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Apple TV HD 32GB",
+            "UPC":	194252220559,
+            "MPN":	"MHY93LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Apple TV 4K HDR 32GB",
+            "UPC":	190199532724,
+            "MPN":	"MXGY2LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Apple TV 4K HDR 64GB",
+            "UPC":	190199533011,
+            "MPN":	"MXH02LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Apple Watch Series 3 GPS 42mm/Case Silver Aluminum Sport Band White",
+            "UPC":	190198806659,
+            "MPN":	"MTF22LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Apple Watch SE GPS 44mm/Case Silver Aluminum Sport Band Abyss Blue",
+            "UPC":	194252585450,
+            "MPN":	"MKQ43LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Apple Watch SE GPS 44mm/Case Gold Aluminum Sport Band Starlight",
+            "UPC":	194252585801,
+            "MPN":	"MKQ53LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Apple Watch SE GPS 44mm/Case Space Gray Aluminum Sport Band Midnight",
+            "UPC":	194252586167,
+            "MPN":	"MKQ63LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Apple Watch Series 7 GPS 41mm/Case Green Aluminum Sport Band Clover",
+            "UPC":	194252589649,
+            "MPN":	"MKN03LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Apple Watch Series 7 GPS 45mm/Case Green Aluminum Sport Band Clover",
+            "UPC":	194252594681,
+            "MPN":	"MKN73LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Apple Watch Series 7 GPS 41mm/Case Blue Aluminum Sport Band Blue Abyss",
+            "UPC":	194252590362,
+            "MPN":	"MKN13LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Apple Watch Series 7 GPS 45mm/Case Blue Aluminum Sport Band Blue Abyss",
+            "UPC":	194252595145,
+            "MPN":	"MKN83LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Apple Watch Series 7 GPS 41mm/Case Midnight Aluminum Sport Midnight",
+            "UPC":	null,
+            "MPN":	"MKMX3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Apple Watch Series 7 GPS 45mm/Case Midnight Aluminum Sport Band Midnight",
+            "UPC":	194252593240,
+            "MPN":	"MKN53LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Apple Watch Series 7 GPS 41mm/Case Starlight Aluminum Sport Band Starlight",
+            "UPC":	194252588925,
+            "MPN":	"MKMY3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Apple Watch Series 7 GPS 45mm/Case Starlight Aluminum Sport Band Starlight",
+            "UPC":	194252593967,
+            "MPN":	"MKN63LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Apple Watch Series 7 GPS 41mm/Case Red Aluminum Sport Band Red",
+            "UPC":	194252591086,
+            "MPN":	"MKN93LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Apple Watch Series 7 GPS 45mm/Case Red Aluminum Sport Band Red",
+            "UPC":	194252595503,
+            "MPN":	"MKN23LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Mac Mini i5/8GB/512GB Space Gray",
+            "UPC":	190199570047,
+            "MPN":	"MGNR3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Mac Mini M1/8GB/256GB Silver",
+            "UPC":	194252091746,
+            "MPN":	"MGNR3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Mac Mini M1/8GB/512GB Silver",
+            "UPC":	194252092163,
+            "MPN":	"MGNT3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Mini (6th Gen) 64GB Wi-FI Pink",
+            "UPC":	194252722411,
+            "MPN":	"MLWL3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Mini (6th Gen) 256GB Wi-FI Pink",
+            "UPC":	194252723739,
+            "MPN":	"MLWR3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Mini (6th Gen) 64GB Wi-FI Starlight",
+            "UPC":	194252527962,
+            "MPN":	"MK7P3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Mini (6th Gen) 256GB Wi-FI Starlight",
+            "UPC":	194252529317,
+            "MPN":	"MK7V3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Mini (6th Gen) 64GB Wi-FI Purple",
+            "UPC":	194252528501,
+            "MPN":	"MK7R3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Mini (6th Gen) 256GB Wi-FI Purple",
+            "UPC":	194252529850,
+            "MPN":	"MK7X3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Mini (6th Gen) 64GB Wi-FI Space Gray",
+            "UPC":	194252527429,
+            "MPN":	"MK7M3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Mini (6th Gen) 256GB Wi-FI Space Gray",
+            "UPC":	194252528778,
+            "MPN":	"MK7T3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad (9th Gen) 64GB Wi-Fi Silver",
+            "UPC":	194252515921,
+            "MPN":	"MK2L3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad (9th Gen) 64GB Wi-Fi Space Gray",
+            "UPC":	194252515655,
+            "MPN":	"MK2K3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad (9th Gen) 256GB Wi-Fi Space Gray",
+            "UPC":	194252516461,
+            "MPN":	"MK2N3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad (9th Gen) 256GB Wi-Fi Silver",
+            "UPC":	194252516737,
+            "MPN":	"MK2P3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Air (4th Gen) 64GB Sky Blue Wi-Fi+Cellular",
+            "UPC":	null,
+            "MPN":	"MYJ12LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Air (4th Gen) 64GB Sky Blue Wi-Fi",
+            "UPC":	190199778139,
+            "MPN":	"MYFQ2LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Air (4th Gen) 256GB Sky Blue Wi-Fi",
+            "UPC":	190199779532,
+            "MPN":	"MYFY2LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Air (4th Gen) 64GB Green Wi-Fi",
+            "UPC":	190199778412,
+            "MPN":	"MYFR2LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Air (4th Gen) 256GB Sky Blue Wi-Fi",
+            "UPC":	190199779815,
+            "MPN":	"MYG02LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Air (4th Gen) 64GB Space Gray Wi-Fi",
+            "UPC":	190199777293,
+            "MPN":	"MYFM2LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Air (4th Gen) 256GB Space Gray Wi-Fi",
+            "UPC":	190199778696,
+            "MPN":	"MYFT2LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Air (4th Gen) 64GB Rose Gold Wi-Fi",
+            "UPC":	190199777859,
+            "MPN":	"MYFP2LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Air (4th Gen) 256GB Rose Gold Wi-Fi",
+            "UPC":	null,
+            "MPN":	"MYFX2LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Air (4th Gen) 64GB Silver Wi-Fi",
+            "UPC":	190199777576,
+            "MPN":	"MYFN2LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Air (4th Gen) 256GB Silver Wi-Fi",
+            "UPC":	190199778979,
+            "MPN":	"MYFW2LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Pro 11\" Wi-Fi 128GB Space Gray",
+            "UPC":	194252185353,
+            "MPN":	"MHQR3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Pro 11\" Wi-Fi 256GB Space Gray",
+            "UPC":	194252185896,
+            "MPN":	"MHQU3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Pro 11\" Wi-Fi 512GB Space Gray",
+            "UPC":	null,
+            "MPN":	"MHQW3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Pro 11\" Wi-Fi 1TB Space Gray",
+            "UPC":	194252186978,
+            "MPN":	"MHQY3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Pro 11\" Wi-Fi 128GB Silver",
+            "UPC":	194252185629,
+            "MPN":	"MHQT3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Pro 11\" Wi-Fi 256GB Silver",
+            "UPC":	194252186169,
+            "MPN":	"MHQV3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Pro 11\" Wi-Fi 512GB Silver",
+            "UPC":	null,
+            "MPN":	"MHQX3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Pro 11\" Wi-Fi 1TB Silver",
+            "UPC":	194252187241,
+            "MPN":	"MHR03LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Pro 12\" Wi-Fi 128GB Space Gray",
+            "UPC":	194252194805,
+            "MPN":	"MHNF3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Pro 12\" Wi-Fi 256GB Space Gray",
+            "UPC":	194252195345,
+            "MPN":	"MHNH3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Pro 12\" Wi-Fi 512GB Space Gray",
+            "UPC":	null,
+            "MPN":	"MHNK3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Pro 12\" Wi-Fi 1TB Space Gray",
+            "UPC":	null,
+            "MPN":	"MHNM3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Pro 12\" Wi-Fi 128GB Silver",
+            "UPC":	194252195079,
+            "MPN":	"MHNG3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Pro 12\" Wi-Fi 256GB Silver",
+            "UPC":	194252195611,
+            "MPN":	"MHNJ3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Pro 12\" Wi-Fi 512GB Silver",
+            "UPC":	194252196151,
+            "MPN":	"MHNL3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Pro 12\" Wi-Fi 1TB Silver",
+            "UPC":	194252196694,
+            "MPN":	"MHNN3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"MacBook Air M1/8GB/256 Space Gray",
+            "UPC":	null,
+            "MPN":	"MGN63LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"MacBook Air M1/8GB/256 Silver",
+            "UPC":	null,
+            "MPN":	"MGN93LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"MacBook Air M1/8GB/256 Gold",
+            "UPC":	null,
+            "MPN":	"MGND3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"MacBook Air M1/8GB/512GB Space Gray",
+            "UPC":	null,
+            "MPN":	"MGN73LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"MacBook Air M1/8GB/512GB Silver",
+            "UPC":	null,
+            "MPN":	"MGNA3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"MacBook Air M1/8GB/512GB Gold",
+            "UPC":	194252049020,
+            "MPN":	"MGNE3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"MacBook Pro 13\" M1/8GB/256GB Space Gray",
+            "UPC":	194252165959,
+            "MPN":	"MYD82LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"MacBook Pro 13\" M1/8GB/512GB Space Gray",
+            "UPC":	194252166406,
+            "MPN":	"MYD92LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"MacBook Pro 13\" M1/8GB/512GB Silver",
+            "UPC":	194252167304,
+            "MPN":	"MYDC2LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Custom MBP 13 8C 8C 256GB SG",
+            "UPC":	null,
+            "MPN":	"Z11B",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"MacBook Pro 14\" M1/16GB/512GB Space Gray",
+            "UPC":	null,
+            "MPN":	"MKGP3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"MacBook Pro 14\" M1/16GB/1TB Silver",
+            "UPC":	194252551073,
+            "MPN":	"MKGT3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"MacBook Pro 14\" M1/16GB/1TB Space Gray",
+            "UPC":	null,
+            "MPN":	"MKGQ3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"MacBook Pro 14\" M1/16GB/512GB Silver",
+            "UPC":	194252551059,
+            "MPN":	"MKGR3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"(CUSTOM) MacBook Pro 14\" M1 Pro 16GB/512GB Space Gray",
+            "UPC":	null,
+            "MPN":	"Z15G",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"DNR MacBook Pro 16\" 2.3GHz i9/16GB/1TB Silver",
+            "UPC":	190199267992,
+            "MPN":	"MVVM2LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"DNR MacBook Pro 16\" 2.3GHz i9/16GB/1TB Space Gray",
+            "UPC":	190199267978,
+            "MPN":	"MVVK2LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"MacBook Pro 16\" M1 Pro/16GB/512GB Space Gray",
+            "UPC":	194252545911,
+            "MPN":	"MK183LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"MacBook Pro 16\" M1 Pro/16GB/512GB Silver",
+            "UPC":	194252547298,
+            "MPN":	"MK1E3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"MacBook Pro 16\" M1 Pro/16GB/1TB Space Gray",
+            "UPC":	null,
+            "MPN":	"MK193LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"MacBook Pro 16\" M1 Pro/16GB/1TB Silver",
+            "UPC":	194252547755,
+            "MPN":	"MK1F3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"MacBook Pro 16\" M1 MAX/32GB/1TB Space Gray",
+            "UPC":	null,
+            "MPN":	"MK1A3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"(CUSTOM) MacBook Pro 16\" M1 MAX/32GB/1TB Space Gray",
+            "UPC":	"Z14V0016W",
+            "MPN":	"Z14V",
+            "Quantity":	"0"
+            },	
+            {	
+            "Name":	"MacBook Pro 16\" M1 MAX/32GB/1TB Silver",
+            "UPC":	194252548219,
+            "MPN":	"MK1H3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"24\" iMac 4.5K Display M1 8C 8C 256GB Blue",
+            "UPC":	null,
+            "MPN":	"MGPK3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"2020 27\" iMac 3.8GHz 8 core 10th Gen i7 512GB",
+            "UPC":	190199711334,
+            "MPN":	"MXWV2LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"2021 27\" iMac 3.3GHz 6 core 10th Gen i5 512GB",
+            "UPC":	190199711341,
+            "MPN":	"MXWU2LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Apple Watch Series 7 GPS+Cellular 45mm/Case Midnight Aluminum Sport Band Midnight",
+            "UPC":	null,
+            "MPN":	"MKJ73LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Apple Watch Series 7 GPS 45mm/Case Blue Aluminum Sport Band Blue Abyss",
+            "UPC":	null,
+            "MPN":	"MKJA3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"iPad Pro 11\" Wi-Fi+ Cellular 2TB Space Gray",
+            "UPC":	null,
+            "MPN":	"MHN23LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"Custom Mac Mini M1 8 core cpu | 8 core gpu 256GB SSD",
+            "UPC":	null,
+            "MPN":	"Z12N",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"24\" iMac 4.5K Display M1 8C 8C 512GB Blue",
+            "UPC":	null,
+            "MPN":	"MGPL3LL/A",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"24\" iMac 4.5K Display M1 8C 8C Purple",
+            "UPC":	null,
+            "MPN":	"Z130",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"13 inch MacBook Air M1 8 core CPU 8 core GPU 512GB Space Gray",
+            "UPC":	400001503775,
+            "MPN":	"Z125",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"14 inch MacBook Pro M1 10 core CPU 16 core GPU 1TB SSD Space Gray",
+            "UPC":	400001550397,
+            "MPN":	"Z15H",
+            "Quantity":	0
+            },	
+            {	
+            "Name":	"10.2 inch iPad Wi-Fi + Cellular 64 GB Silver",
+            "UPC":	194252522875,
+            "MPN":	"MK673LL/A",
+            "Quantity":	0
+            }	
+    ]
+}
