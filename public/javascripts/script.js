@@ -1,20 +1,5 @@
-var mongoose = require('mongoose');
-const dbConnect = require('./config/dbConnect.js');
-const itemModel = require('./model/Inventory.js');
-let databaseArray = [];
 
-dbConnect();
-
-itemModel.find((err, data) => {
-    if (data) {
-      for (let item in data) {
-          databaseArray.push(item);
-      }
-    } else {
-        console.log('Failed: ' + err);
-    }
-});
-showArrayNames(databaseArray);
+//showArrayNames(databaseArray);
 
 // Create HTML table elements for each item in the inventory array
 function showArrayNames(arr) {

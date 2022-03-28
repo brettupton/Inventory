@@ -21,7 +21,13 @@ app.get('/', (req, res) => {
 })
 
 app.get('/view.html', (req, res) => {
-  res.render("view.html");
+  itemModel.find((err, data) => {
+    if (!err) {
+      res.render('view.html', { dataArray : data});
+    } else {
+      console.log('Error: ' + err);
+    }
+  });
 })
 
 //Connects to MongoDB using Mongoose 
