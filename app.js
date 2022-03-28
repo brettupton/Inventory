@@ -1,65 +1,36 @@
 var express = require('express');
-var engines = require('consolidate');
 var app = express();
+var router = express.Router();
+var engines = require('consolidate');
+var ejs = require('ejs');
+var mongoose = require('mongoose');
+const dbConnect = require('./config/dbConnect.js');
+const itemModel = require('./model/Inventory.js');
+
 var PORT = 3000;
 
 //Rendering Engine
 app.set('views', __dirname + '/views');
-app.engine('html', engines.mustache);
+app.engine('html', ejs.renderFile);
 app.set('view engine', 'html');
 app.use(express.static('public'));
- 
-const dataArray = require('./javascripts/inventory.json');
 
 //GET requests to html files
-app.get('/index.html', (req, res) => {
+app.get('/', (req, res) => {
   res.render('index.html');
 })
 
 app.get('/view.html', (req, res) => {
-  res.render('view.html');
+  res.render("view.html");
 })
 
-//Have the server listen on the specified port
-app.listen(PORT, function(err){
+//Connects to MongoDB using Mongoose 
+//Doesn't connect to server port unless connection is established
+dbConnect();
+mongoose.connection.once('open', () => {
+  console.log('Connected to MongoDB');
+  app.listen(PORT, function(err){
     if (err) console.log(err);
     console.log("Server listening on PORT", PORT);
-}); 
-
-// Create HTML table elements for each item in the inventory array
-function showArrayNames(obj) {
-  let itemNumber = 0;
-  const tableBody = document.getElementById('tableBody');
-  for (let item of obj.inventory) {
-      itemNumber++;
-      let tr = document.createElement('tr');
-      tr.innerHTML = '<td>' + itemNumber + '</td>' +
-      '<td>' + item.Name + '</td>' +
-      '<td>' + item.MPN + '</td>' +
-      '<td>' + item.UPC + '</td>' +
-      '<td>' + item.Quantity + '</td>';
-      tableBody.appendChild(tr);
-  }
-}
-
-// Get input from user and set new quantity on chosen item ID
-function addToItem() {
-  const newQuantity = document.getElementById('newQuantity');
-  const inventoryNum = document.getElementById('itemNum');
-  if (inventoryNum.value >= 1 && inventoryNum.value <= dataArray.inventory.length) {
-      if (newQuantity.value < 200) {
-          dataArray.inventory[(inventoryNum.value)-1].Quantity = parseInt(newQuantity.value);
-      } else {
-          alert('That number is too large. I only accept values less than 200.');
-      }
-  } else {
-      alert('That inventory number is outside my range.');
-  }
-}
-
-// Deletes current HTML content from table and calls the showArrayNames function
-function updateArray(arr) {
-  const tableBody = document.querySelector('tbody');
-  tableBody.innerHTML = '';
-  showArrayNames(arr);
-}
+  }); 
+});

@@ -1,41 +1,26 @@
-const appleID = 2970325;
-const dataArray = require('/javascripts/inventory.json');
+var mongoose = require('mongoose');
+const dbConnect = require('./config/dbConnect.js');
+const itemModel = require('./model/Inventory.js');
+let databaseArray = [];
 
-var express = require('express');
-var app = express();
+dbConnect();
 
-app.use(express.json());
-
-
-// Get data from json, assign the data to dataArray, and load the initial table
-// fetch("inventory.json")
-//   .then(response => response.json())
-//   .then(json => {
-//       dataArray = json;
-//       showArrayNames(dataArray);
-//   });
-
-
-// Create the class that will hold the information for the report
-class inventoryItem {
-    constructor(name) {
-        this.name = name;
-        this.MPN = '';
-        this.IFQ = 0;
-        this.STSIndividual = 0;
-        this.STSInstitution = 0;
-        this.STRIndividual = 0;
-        this.STRInstitution = 0;
-        this.STPIndividual = 0;
-        this.STPInstitution = 0;
+itemModel.find((err, data) => {
+    if (data) {
+      for (let item in data) {
+          databaseArray.push(item);
+      }
+    } else {
+        console.log('Failed: ' + err);
     }
-}
+});
+showArrayNames(databaseArray);
 
 // Create HTML table elements for each item in the inventory array
-function showArrayNames(obj) {
+function showArrayNames(arr) {
     let itemNumber = 0;
     const tableBody = document.getElementById('tableBody');
-    for (let item of obj.inventory) {
+    for (let item of arr) {
         itemNumber++;
         let tr = document.createElement('tr');
         tr.innerHTML = '<td>' + itemNumber + '</td>' +
