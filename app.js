@@ -12,7 +12,7 @@ var PORT = 3000;
 //Rendering Engine
 app.set('views', __dirname + '/views');
 app.engine('html', ejs.renderFile);
-app.set('view engine', 'html');
+app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 //GET requests to html files
@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 app.get('/view.html', (req, res) => {
   itemModel.find((err, data) => {
     if (!err) {
-      res.render('view.html', { dataArray : data});
+      res.render('view.ejs', { dataArray : data });
     } else {
       console.log('Error: ' + err);
     }

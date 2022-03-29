@@ -1,0 +1,10 @@
+.scrollbar {
+position: relative;
+height: 80vh;
+padding: 20px;
+overflow: auto;
+}
+
+.table-wrapper-scroll-y {
+display: block;
+}
