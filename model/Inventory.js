@@ -7,7 +7,7 @@ const itemSchema = new Schema({
         required: true
     },
     UPC: {
-        type: Number,
+        type: String,
         required: true
     },
     MPN: {

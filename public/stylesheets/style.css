@@ -8,3 +8,13 @@ overflow: auto;
 .table-wrapper-scroll-y {
 display: block;
 }
+
+#icon {
+    height: 150px;
+    width: 150px;
+    margin: 20px 0;
+}
+
+#bottom-form-input {
+    margin: 10px 0;
+}

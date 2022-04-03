@@ -14,12 +14,11 @@ app.set('views', __dirname + '/views');
 app.engine('html', ejs.renderFile);
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
-app.use(bodyParser.urlencoded({extended:true}));
-app.use(bodyParser.json());
+app.use(express.urlencoded({extended: true}));
 
 //GET requests to html files
 app.get('/', (req, res) => {
-  res.render('index.html');
+  res.render('index.ejs');
 })
 
 app.get('/view.html', (req, res) => {
@@ -30,6 +29,21 @@ app.get('/view.html', (req, res) => {
       console.log('Error: ' + err);
     }
   });
+})
+
+app.post('/add', (req, res) => {
+  var newItem = new itemModel({
+    Name : req.body.name, 
+    UPC : req.body.upc, 
+    MPN : req.body.mpn,
+    Quantity : req.body.quantity
+  })
+  newItem.save((err) => {
+    if (err) {
+      console.log(err);
+    }
+  })
+  res.redirect('/view.html');
 })
 
 //Connects to MongoDB using Mongoose 
