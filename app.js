@@ -21,6 +21,8 @@ app.get('/', (req, res) => {
   res.render('index.ejs');
 })
 
+//Gets documents from database 
+//and sends the array through ejs as a response
 app.get('/view.html', (req, res) => {
   itemModel.find((err, data) => {
     if (!err) {
@@ -31,6 +33,17 @@ app.get('/view.html', (req, res) => {
   });
 })
 
+//GET request for item deletion
+app.get('/delete/:id', (req, res) => {
+  itemModel.findOneAndDelete({UPC : req.params.id}, (err) => {
+    if (err) {
+      console.log(err);
+    }
+  })
+  res.redirect('/view.html');
+})
+
+//POST request to add new item
 app.post('/add', (req, res) => {
   var newItem = new itemModel({
     Name : req.body.name, 
@@ -42,6 +55,21 @@ app.post('/add', (req, res) => {
     if (err) {
       console.log(err);
     }
+  })
+  res.redirect('/view.html');
+})
+
+//POST request to update document in database
+app.post('/update/:id', (req, res) => {
+  itemModel.findOneAndUpdate({UPC : req.params.id}, {
+    Name : req.body.name,
+    UPC : req.body.upc,
+    MPN : req.body.mpn,
+    Quantity : req.body.quantity
+  }, (err, doc) => {
+    if (err) {
+      console.log(err);
+    } 
   })
   res.redirect('/view.html');
 })
