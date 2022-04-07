@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+require('dotenv').config();
 var router = express.Router();
 var engines = require('consolidate');
 var ejs = require('ejs');
