@@ -7,7 +7,7 @@ const itemSchema = new Schema({
         required: true
     },
     UPC: {
-        type: String,
+        type: Number,
         required: true
     },
     MPN: {
@@ -18,6 +18,12 @@ const itemSchema = new Schema({
         type: Number,
         default: 0
     },
+    Image: {
+        type: String,
+    },
+    Category: {
+        type: String,
+    }
 });
 
 var itemModel = mongoose.model('item', itemSchema);

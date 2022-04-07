@@ -22,8 +22,8 @@ app.get('/', (req, res) => {
 })
 
 //Gets documents from database 
-//and sends the array through ejs as a response
-app.get('/view.html', (req, res) => {
+//and sends the request through ejs as a response
+app.get('/view', (req, res) => {
   itemModel.find((err, data) => {
     if (!err) {
       res.render('view.ejs', { dataArray : data });
@@ -33,6 +33,28 @@ app.get('/view.html', (req, res) => {
   });
 })
 
+//Sort based on either quantity or category
+app.get('/view/sort', (req, res) => {
+  let optionSelected = req.query.options;
+  if (optionSelected === 'Quantity') {
+    itemModel.find((err, data) => {
+      if (!err) {
+        res.render('view.ejs', {dataArray : data})
+      } 
+    })
+    .sort({ Quantity : -1});
+  } else if (optionSelected === 'Category') {
+    itemModel.find((err, data) => {
+      if (!err) {
+        res.render('view.ejs', {dataArray : data})
+      } 
+    })
+    .sort({ Category : -1});
+  } else {
+    res.redirect('/view');
+  }
+})
+
 //GET request for item deletion
 app.get('/delete/:id', (req, res) => {
   itemModel.findOneAndDelete({UPC : req.params.id}, (err) => {
@@ -40,7 +62,7 @@ app.get('/delete/:id', (req, res) => {
       console.log(err);
     }
   })
-  res.redirect('/view.html');
+  res.redirect('/view');
 })
 
 //POST request to add new item
@@ -49,14 +71,16 @@ app.post('/add', (req, res) => {
     Name : req.body.name, 
     UPC : req.body.upc, 
     MPN : req.body.mpn,
-    Quantity : req.body.quantity
+    Quantity : req.body.quantity,
+    Image: req.body.image,
+    Category : req.body.category
   })
   newItem.save((err) => {
     if (err) {
       console.log(err);
     }
   })
-  res.redirect('/view.html');
+  res.redirect('/view');
 })
 
 //POST request to update document in database
@@ -65,13 +89,19 @@ app.post('/update/:id', (req, res) => {
     Name : req.body.name,
     UPC : req.body.upc,
     MPN : req.body.mpn,
-    Quantity : req.body.quantity
-  }, (err, doc) => {
+    Quantity : req.body.quantity,
+    Image : req.body.image,
+    Category : req.body.category
+  }, (err) => {
     if (err) {
       console.log(err);
     } 
   })
-  res.redirect('/view.html');
+  res.redirect('/view');
+})
+
+app.get('/orders', (req, res) => {
+  res.render('orders.ejs');
 })
 
 //Connects to MongoDB using Mongoose 
