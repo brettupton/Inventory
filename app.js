@@ -110,7 +110,7 @@ app.get('/orders', (req, res) => {
 dbConnect();
 mongoose.connection.once('open', () => {
   console.log('Connected to MongoDB');
-  app.listen(process.env.PORT || PORT, function(err){
+  app.listen((process.env.PORT || PORT), function(err){
     if (err) console.log(err);
     console.log("Server listening on PORT", PORT);
   }); 
