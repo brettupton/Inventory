@@ -1,9 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const itemModel = require('../model/Inventory');
+const { ensureAuthenticated } = require('../config/auth');
 
 // INITIAL DATABASE LOAD
-router.get('/inventory', (req, res) => {
+router.get('/inventory', ensureAuthenticated, (req, res) => {
   itemModel.find((err, data) => {
     if (!err) {
       res.render('view.ejs', { dataArray : data });
@@ -14,7 +15,7 @@ router.get('/inventory', (req, res) => {
 })
 
 // SORT
-router.get('/sort', (req, res) => {
+router.get('/sort', ensureAuthenticated, (req, res) => {
   let optionSelected = req.query.options;
   if (optionSelected === 'Quantity') {
     itemModel.find((err, data) => {
@@ -36,7 +37,7 @@ router.get('/sort', (req, res) => {
 })
 
 // DELETE
-router.get('/delete/:id', (req, res) => {
+router.get('/delete/:id', ensureAuthenticated, (req, res) => {
   itemModel.findOneAndDelete({UPC : req.params.id}, (err) => {
     if (err) {
       console.log(err);
@@ -46,7 +47,7 @@ router.get('/delete/:id', (req, res) => {
 })
 
 // ADD
-router.post('/add', (req, res) => {
+router.post('/add', ensureAuthenticated, (req, res) => {
   itemModel.findOne({UPC : req.body.upc})
     .then(item => {
       if (item) {
@@ -71,7 +72,7 @@ router.post('/add', (req, res) => {
 })
 
 // UPDATE
-router.post('/update/:id', (req, res) => {
+router.post('/update/:id', ensureAuthenticated, (req, res) => {
   itemModel.findOneAndUpdate({UPC : req.params.id}, {
     Name : req.body.name,
     UPC : req.body.upc,

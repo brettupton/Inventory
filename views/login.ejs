@@ -3,9 +3,15 @@
         <div class="col-4 py-3">
             <form class="form-control py-3" action="/users/login" method="POST">
                 <h4 class="my-2">Log In</h4>
-                <input class="form-control" type="text" placeholder="Username" name="usernameAttempt" id="username" required>
+                <% if (typeof error != 'undefined') { %>
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <%= error %>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                <% } %>
+                <input class="form-control" type="text" placeholder="Username" name="username" id="username" required>
                 <label for="username">Username</label>
-                <input class="form-control" type="password" placeholder="Password" name="passwordAttempt" id="password" required>
+                <input class="form-control" type="password" placeholder="Password" name="password" id="password" required>
                 <label for="password">Password</label><br>
                 <button type="submit" class="btn btn-success">Log In</button>
             </form>
