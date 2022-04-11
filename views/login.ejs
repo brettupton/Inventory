@@ -2,17 +2,20 @@
     <div class="row my-5 justify-content-center">
         <div class="col-4 py-3">
             <form class="form-control py-3" action="/users/login" method="POST">
-                <h4 class="my-2">Log In</h4>
-                <% if (typeof error != 'undefined') { %>
-                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                        <%= error %>
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
-                <% } %>
-                <input class="form-control" type="text" placeholder="Username" name="username" id="username" required>
-                <label for="username">Username</label>
-                <input class="form-control" type="password" placeholder="Password" name="password" id="password" required>
-                <label for="password">Password</label><br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                    <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                  </svg>
+                <h4 class="mb-3">Log In</h4>
+                  <%- include('./partials/messages') %>
+                <div class="form-floating">
+                    <input class="form-control" type="text" placeholder="Username" name="username" id="username" required>
+                    <label for="username">Username</label>
+                </div>
+                <div class="form-floating">
+                    <input class="form-control" type="password" placeholder="Password" name="password" id="password" required>
+                    <label for="password">Password</label><br>
+                </div>
                 <button type="submit" class="btn btn-success">Log In</button>
             </form>
         </div>

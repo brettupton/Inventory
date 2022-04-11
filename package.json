@@ -8,8 +8,8 @@
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
+    "connect-flash": "^0.1.1",
     "consolidate": "^0.16.0",
-    "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "dotenv": "^16.0.0",
     "ejs": "^3.1.6",

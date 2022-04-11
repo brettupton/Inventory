@@ -18,3 +18,17 @@ display: block;
 #bottom-form-input {
     margin: 10px 0;
 }
+
+#sort-button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white
+}
+
+#search-button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+}

@@ -9,14 +9,14 @@ module.exports = function(passport) {
             UserModel.findOne({ username : username })
                 .then(user => {
                     if (!user) {
-                        return done(null, false);
+                        return done(null, false, { message : 'That username is not found' });
                     } 
                     bcrypt.compare(password, process.env.HASH, (err, isMatch) => {
                         if (err) throw err;
                         if (isMatch) {
                             return done(null, user)
                         } else {
-                            return done(null, false)
+                            return done(null, false, { message : 'Incorrect password'});
                         }
                     })
                 })
