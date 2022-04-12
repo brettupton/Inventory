@@ -15,24 +15,53 @@ router.get('/inventory', ensureAuthenticated, (req, res) => {
 })
 
 // SORT
-router.get('/inventory/sort/:id', ensureAuthenticated, (req, res) => {
-  switch (req.params.id) {
-    case 'quantity': 
-      itemModel.find((err, data) => {
-        if (!err) {
-          res.render('view.ejs', { dataArray : data })
-        }
-      })
-      .sort({ Quantity : -1});
-      break;
+// router.get('/inventory/sort/:id', ensureAuthenticated, (req, res) => {
+//   switch (req.params.id) {
+//     case 'quantity': 
+//       itemModel.find((err, data) => {
+//         if (!err) {
+//           res.render('view.ejs', { dataArray : data })
+//         }
+//       })
+//       .sort({ Quantity : -1});
+//       break;
+//     case 'category': 
+//       itemModel.find((err, data) => {
+//         if (!err) {
+//           res.render('view.ejs', { dataArray : data })
+//         }
+//       })
+//       .sort({ Category : -1});
+//       break;
+//   }
+// })
+
+router.get('/inventory/sort', ensureAuthenticated, (req, res) => {
+  switch (Object.keys(req.query)[0]) {
     case 'category': 
-      itemModel.find((err, data) => {
-        if (!err) {
-          res.render('view.ejs', { dataArray : data })
-        }
-      })
-      .sort({ Category : -1});
+      itemModel.find({ Category : req.query.category }, (err, data) => {
+        res.render('view.ejs', { dataArray : data });
+      });
       break;
+    case 'quantity': 
+      if (req.query.quantity === 'descending') {
+        itemModel.find((err, data) => {
+          if (!err) {
+            res.render('view.ejs', { dataArray : data })
+          }
+        })
+        .sort({ Quantity : -1});
+        } else if (req.query.quantity === 'ascending') {
+          itemModel.find((err, data) => {
+            if (!err) {
+              res.render('view.ejs', { dataArray : data })
+            }
+          })
+          .sort({ Quantity : 1});
+        } else {
+          res.redirect('/view/inventory');
+        }
+    break;
   }
 })
 
@@ -97,7 +126,7 @@ router.get('/search', ensureAuthenticated, (req, res) => {
      "$options" : "i"
   }}, (err, found) => {
     if (found.length > 0) {
-      res.render('view.ejs', {dataArray : found});
+      res.render('view.ejs', { dataArray : found });
     } else if (found.length <= 0) {
       req.flash('search_error', 'No matches found');
       res.redirect('/view/inventory');
