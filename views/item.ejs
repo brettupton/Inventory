@@ -1,0 +1,43 @@
+<div class="container mt-5" id="item-view">
+    <div class="row">
+        <div class="col text-center">
+        <img src="<%= item.Image %>" id="icon" />
+        <h4><%= item.Name %></h4>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-dash-circle text-danger" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+          </svg> <%= item.Quantity %><svg xmlns="http://www.w3.org/2000/svg" id="plus-button" width="25" height="25" fill="currentColor" class="bi bi-plus-circle text-success" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+          </svg>
+        <p>MPN: <%= item.MPN %></p>
+        <p>UPC: <%= item.UPC %></p>
+        <p>Category: <%= item.Category %></p>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="position-absolute bottom-0 start-50 translate-middle-x mb-5">
+            <form method="GET" action="/item/view">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-left"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+            </svg> 
+                <select class="minimal" name='item' onchange='if(this.value != 0) { this.form.submit(); }'>
+                <option selected value="190199098428">Select an item</option>
+                <% dataArray.forEach(item=> { %>
+                    <option value="<%= item.UPC %>">
+                        <%= item.Name %>
+                    </option>
+                    <% }) %>
+            </select> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg>
+            </form>
+            <button onclick="window.location.href='item/view?item=<%= nextUPC %>'"></button>
+    </div>
+</div>

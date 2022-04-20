@@ -8,7 +8,7 @@
               </svg> INVENTORY</h1>
         </div>
         <div class="col-2">
-        <form method="GET" action="view/search">
+        <form method="GET" action="view/inventory/search">
             <input type="text" class="form-control" name="search" id="search" placeholder="Search">
         </div>
         <div class="col-1">
@@ -83,8 +83,7 @@
                                 <%= item.Quantity %>
                             </td>
                             <td class="text-right">
-                                <button class="btn btn-success" data-bs-toggle="modal"
-                                    data-bs-target="#itemModal<%=num%>">
+                                <button class="btn btn-success" onclick="window.location.href='item/view?item=<%= item.UPC %>'">
                                     View
                                 </button>
                                 <button id="del-button" class="btn btn-danger"

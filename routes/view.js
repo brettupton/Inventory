@@ -15,27 +15,6 @@ router.get('/inventory', ensureAuthenticated, (req, res) => {
 })
 
 // SORT
-// router.get('/inventory/sort/:id', ensureAuthenticated, (req, res) => {
-//   switch (req.params.id) {
-//     case 'quantity': 
-//       itemModel.find((err, data) => {
-//         if (!err) {
-//           res.render('view.ejs', { dataArray : data })
-//         }
-//       })
-//       .sort({ Quantity : -1});
-//       break;
-//     case 'category': 
-//       itemModel.find((err, data) => {
-//         if (!err) {
-//           res.render('view.ejs', { dataArray : data })
-//         }
-//       })
-//       .sort({ Category : -1});
-//       break;
-//   }
-// })
-
 router.get('/inventory/sort', ensureAuthenticated, (req, res) => {
   switch (Object.keys(req.query)[0]) {
     case 'category': 
@@ -68,12 +47,11 @@ router.get('/inventory/sort', ensureAuthenticated, (req, res) => {
 // DELETE
 router.get('/delete/:id', ensureAuthenticated, (req, res) => {
   itemModel.findOneAndDelete({UPC : req.params.id}, (err, item) => {
-    if (item) {
-      req.flash('delete', `${item.Name} has been deleted`);
+    if (!err) {
+      req.flash('deleted', `${item.Name} has been deleted`);
       res.redirect('/view/inventory');
     };
   })
-  res.redirect('/view/inventory');
 })
 
 // ADD
@@ -105,7 +83,7 @@ router.post('/add', ensureAuthenticated, (req, res) => {
 
 // UPDATE
 router.post('/update/:id', ensureAuthenticated, (req, res) => {
-  itemModel.findOneAndUpdate({UPC : req.params.id}, {
+  itemModel.findOneAndUpdate({ UPC : req.params.id }, {
     Name : req.body.name,
     UPC : req.body.upc,
     MPN : req.body.mpn,
@@ -120,7 +98,7 @@ router.post('/update/:id', ensureAuthenticated, (req, res) => {
 })
 
 // SEARCH
-router.get('/search', ensureAuthenticated, (req, res) => {
+router.get('/inventory/search', ensureAuthenticated, (req, res) => {
   itemModel.find({ Name: {
      "$regex" : req.query.search,
      "$options" : "i"

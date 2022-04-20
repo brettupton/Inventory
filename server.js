@@ -36,19 +36,20 @@ app.use(function(req, res, next){
   res.locals.error = req.flash('error');
   res.locals.search_error = req.flash('search_error');
   res.locals.add_error = req.flash('add_error');
+  res.locals.deleted = req.flash('deleted');
   next();
 });
 
 // Router
 app.use('/', (require('./routes/index')));
 app.use('/view', (require('./routes/view')));
-app.use('/users', require('./routes/users'));
+app.use('/users', (require('./routes/users')));
+app.use('/item', (require('./routes/item')));
 
 
 app.get('/orders', (req, res) => {
   res.send('I\'m working on it >:(');
-})
-
+});
 
 //Database connection and server listen
 dbConnect();

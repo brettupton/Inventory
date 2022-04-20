@@ -87,3 +87,15 @@ select.minimal:focus {
     background-repeat: no-repeat;
     outline: 0;
 }
+
+#item-view {
+  background-color: white;
+  color: black;
+  border-radius: 1.5em;
+  width: 30%;
+  padding: 15px 0;
+}
+
+#plus-button {
+  padding-left: 5px;
+}
