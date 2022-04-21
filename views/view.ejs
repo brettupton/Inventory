@@ -90,73 +90,10 @@
                                     onclick="confirmDelete('<%= item.UPC %>')">X</button>
                             </td>
                         </tr>
-                        <% }); %>
+                    <% }); %>
         </tbody>
     </table>
 </div>
-<!-- Item Display Modal -->
-<% let itemNum=0 %>
-<% dataArray.forEach(item=> { %>
-    <% itemNum++ %>
-<div class="modal fade" id="itemModal<%=itemNum%>" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title text-black" id="exampleModalLabel">View</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body text-center text-black">
-                <form action="view/update/<%= item.UPC %>" method="POST">
-                    <img src="<%= item.Image %>" id="icon" />
-                    <div class="form-floating">
-                        <input type="text" id="pname" class="form-control form-control-sm"
-                            placeholder="<%= item.Name %>" value="<%= item.Name %>" name="name" required>
-                        <label for="pname">Product Name</label>
-                    </div>
-                    <div class="form-floating">
-                        <input type="number" id="pquantity" class="form-control form-control-sm"
-                            placeholder="<%= item.Quantity %>" value="<%= item.Quantity %>" name="quantity"
-                            required>
-                        <label for="pquantity">Quantity</label>
-                    </div>
-                    <div class="form-floating">
-                        <input type="text" id="pmpn" class="form-control form-control-sm"
-                            placeholder="<%= item.MPN %>" value="<%= item.MPN %>" name="mpn" required>
-                        <label for="pmpn">MPN</label>
-                    </div>
-                    <div class="form-floating">
-                        <input type="text" id="pupc" class="form-control form-control-sm"
-                            placeholder="<%= item.UPC %>" value="<%= item.UPC %>" name="upc" required>
-                        <label for="pupc">UPC</label>
-                    </div>
-                    <div class="form-floating">
-                        <select class="form-select form-select-sm" id="pcategory" name="category">
-                            <option selected="<%= item.Category %>">
-                                <%= item.Category %>
-                            </option>
-                            <option value="MacBook">MacBook</option>
-                            <option value="iPad">iPad</option>
-                            <option value="Watch">Watch</option>
-                            <option value="AirPods">AirPods</option>
-                            <option value="iMac">iMac</option>
-                            <option value="AppleTV">AppleTV</option>
-                            <option value="HomePod">HomePod</option>
-                            <option value="Accessories">Accessories</option>
-                        </select>
-                        <label for="pcategory">Product Category</label>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary"
-                            data-bs-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Save changes</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<% }); %>
 <!-- Add to database Modal -->
 <div class="modal fade" id="addItem" tabindex="-1" aria-labelledby="label" aria-hidden="true">
     <div class="modal-dialog">
@@ -201,12 +138,12 @@
         </div>
     </div>
 </div>
-    <script>
-        const confirmDelete = (item) => {
-            button = document.getElementById('del-button');
-            let confirmation = confirm('Are you sure you want to delete this item?');
-            if (confirmation) {
-                window.location.href = `view/delete/${item}`;
-            }
+<script>
+    const confirmDelete = (item) => {
+        button = document.getElementById('del-button');
+        let confirmation = confirm('Are you sure you want to delete this item?');
+        if (confirmation) {
+            window.location.href = `view/delete/${item}`;
         }
-    </script>
+    }
+</script>

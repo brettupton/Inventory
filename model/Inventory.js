@@ -23,6 +23,24 @@ const itemSchema = new Schema({
     },
     Category: {
         type: String,
+    },
+    IndividualSold: {
+        type: Number,
+    },
+    InstitutionalSold: {
+        type: Number,
+    },
+    IndividualReturned: {
+        type: Number,
+    },
+    InstitutionalReturned: {
+        type: Number,
+    },
+    IndividualPromotion: {
+        type: Number,
+    },
+    InstitutionalPromotion: {
+        type: Number,
     }
 });
 
