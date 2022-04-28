@@ -106,8 +106,26 @@ router.get('/inventory/search', ensureAuthenticated, (req, res) => {
     if (found.length > 0) {
       res.render('view.ejs', { dataArray : found });
     } else if (found.length <= 0) {
-      req.flash('search_error', 'No matches found');
-      res.redirect('/view/inventory');
+      var itemArray = [];
+      itemModel.findOne({UPC : req.query.search}, async (err, searchResult) => {
+        if (!searchResult) {
+            itemModel.findOne({MPN : req.query.search}, async (err, searchResult) => {
+              if (!searchResult) {
+                req.flash('search_error', 'No matches found');
+                res.redirect('/view/inventory');
+              } else {
+                itemArray.push(searchResult);
+                res.render('view.ejs', { dataArray : itemArray });
+              }
+              if (err) {
+                    res.redirect('/view/inventory');
+              }
+            })
+        } else {
+            itemArray.push(searchResult);
+            res.render('view.ejs', { dataArray : itemArray });
+        }
+      })
     }
   })
 })

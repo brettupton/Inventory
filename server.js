@@ -45,11 +45,8 @@ app.use('/', (require('./routes/index')));
 app.use('/view', (require('./routes/view')));
 app.use('/users', (require('./routes/users')));
 app.use('/item', (require('./routes/item')));
+app.use('/orders', (require('./routes/order')))
 
-
-app.get('/orders', (req, res) => {
-  res.send('I\'m working on it >:(');
-});
 
 //Database connection and server listen
 dbConnect();

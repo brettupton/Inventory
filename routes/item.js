@@ -14,7 +14,8 @@ router.get('/', (req, res) => {
     }).sort({ Name: 1})
 })
 
-// DISPLAY WITH EITHER MPN OR UPC
+// DISPLAY WITH EITHER MPN OR UPC 
+// AND FIND NEXT AND PREV UPC TO DISPLAY
 router.get('/view', (req, res) => {
     itemModel.find((err, data) => {
         if (!err) {
