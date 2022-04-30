@@ -4,7 +4,7 @@ const itemModel = require('../model/Inventory');
 const { ensureAuthenticated } = require('../config/auth');
 
 // INDEX
-router.get('/', (req, res) => {
+router.get('/', ensureAuthenticated, (req, res) => {
     itemModel.find((err, data) => {
         if (!err) {
             res.render('item_index.ejs', {dataArray : data});
@@ -16,7 +16,7 @@ router.get('/', (req, res) => {
 
 // DISPLAY WITH EITHER MPN OR UPC 
 // AND FIND NEXT AND PREV UPC TO DISPLAY
-router.get('/view', (req, res) => {
+router.get('/view', ensureAuthenticated, (req, res) => {
     itemModel.find((err, data) => {
         if (!err) {
             itemModel.findOne({UPC : req.query.item}, async (err, itemResult) => {

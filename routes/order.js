@@ -5,14 +5,8 @@ const { ensureAuthenticated } = require('../config/auth');
 const customerModel = require('../model/Customer');
 
 // INDEX
-router.get('/', (req, res) => {
-  itemModel.find((err, data) => {
-    if (!err) {
-      res.render('order.ejs', { dataArray : data });
-    } else {
-      console.log('Error: ' + err);
-    }
-  });
+router.get('/', ensureAuthenticated, (req, res) => {
+  res.render('order.ejs');
 })
 
 // VIEW LOW STOCK
@@ -21,17 +15,19 @@ router.get('/stock/low', (req, res) => {
         if (!err) {
             res.render('low_stock.ejs', { dataArray : data});
         } else {
-            res.flash('search_error', 'There are no items that are low on stock');
+            res.flash('error', 'There are no items that are low on stock');
             res.redirect('/');
         }
     }).sort({ Category: 1});
 })
 
-router.get('/corder/new', (req, res) => {
+// NEW CUSTOMER ORDER FORM
+router.get('/corder/new', ensureAuthenticated, (req, res) => {
     res.render('new_customer_order.ejs');
 })
 
-router.post('/newCustomer', (req, res) => {
+// ADD NEW CUSTOMER
+router.post('/newCustomer', ensureAuthenticated, (req, res) => {
     const newCustomer = new customerModel({
         name : req.body.name, 
         date : req.body.date, 
@@ -47,11 +43,20 @@ router.post('/newCustomer', (req, res) => {
         additionalNotes : req.body.additionalNotes
       })
       newCustomer.save((err) => {
-        if (err) {
-          console.log(err);
+        if (!err) {
+          req.flash('success', 'Customer added');
+          res.redirect('/orders');
         }
       })
-    res.redirect('/orders');
+})
+
+// VIEW CUSTOMER ORDERS
+router.get('/corder', (req, res) => {
+  customerModel.find((err, data) => {
+    if (!err) {
+      res.render('view_customer.ejs', {customersArray : data});
+    }
+  })
 })
 
 module.exports = router;

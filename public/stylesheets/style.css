@@ -88,3 +88,14 @@ select.minimal:focus {
   width: 200px;
   height: 50px;
 }
+
+#customer-form {
+  background-color: #212529;
+  border: none;
+}
+
+#customer-card {
+  color: black;
+  width: 25vh;
+  margin: 35px 100px;
+}

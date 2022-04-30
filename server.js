@@ -32,11 +32,9 @@ app.use(flash());
 
 // Flash messages
 app.use(function(req, res, next){
-  res.locals.add_success = req.flash('add_success');
+  res.locals.success = req.flash('success');
   res.locals.error = req.flash('error');
-  res.locals.search_error = req.flash('search_error');
-  res.locals.add_error = req.flash('add_error');
-  res.locals.deleted = req.flash('deleted');
+  res.locals.info = req.flash('info');
   next();
 });
 

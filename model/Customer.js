@@ -40,6 +40,14 @@ const customerSchema = new Schema({
     },
     additionalNotes: {
         type: String,
+    },
+    arrived: {
+        type: Boolean,
+        default: false
+    },
+    pickedUp: {
+        type: Boolean,
+        default: false
     }
 });
 

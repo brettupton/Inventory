@@ -48,7 +48,7 @@ router.get('/inventory/sort', ensureAuthenticated, (req, res) => {
 router.get('/delete/:id', ensureAuthenticated, (req, res) => {
   itemModel.findOneAndDelete({UPC : req.params.id}, (err, item) => {
     if (!err) {
-      req.flash('deleted', `${item.Name} has been deleted`);
+      req.flash('success', `${item.Name} has been deleted`);
       res.redirect('/view/inventory');
     };
   })
@@ -59,7 +59,7 @@ router.post('/add', ensureAuthenticated, (req, res) => {
   itemModel.findOne({UPC : req.body.upc})
     .then(item => {
       if (item) {
-        req.flash('add_error', `${item.Name} already has that UPC`);
+        req.flash('info', `${item.Name} already has that UPC`);
         res.redirect('/view/inventory');
       } else {
         const newItem = new itemModel({
@@ -75,7 +75,7 @@ router.post('/add', ensureAuthenticated, (req, res) => {
             console.log(err);
           }
         })
-        req.flash('add_success', `${newItem.Name} has been added`);
+        req.flash('success', `${newItem.Name} has been added`);
         res.redirect('/view/inventory');
       }
     })
@@ -111,7 +111,7 @@ router.get('/inventory/search', ensureAuthenticated, (req, res) => {
         if (!searchResult) {
             itemModel.findOne({MPN : req.query.search}, async (err, searchResult) => {
               if (!searchResult) {
-                req.flash('search_error', 'No matches found');
+                req.flash('error', 'No matches found');
                 res.redirect('/view/inventory');
               } else {
                 itemArray.push(searchResult);

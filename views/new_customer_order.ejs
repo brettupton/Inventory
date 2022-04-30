@@ -7,65 +7,81 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container w-50">
     <div class="row">
         <div class="col">
-            <form method="POST" action="/orders/newCustomer" class="form-control">
-                <div class="row">
+            <form method="POST" action="/orders/newCustomer" class="form-control" id="customer-form">
+                <div class="row my-3">
                     <div class="col">
                         <div class="form-floating">
                             <input type="text" class="form-control" name="name" placeholder="John Doe" required>
-                            <label for="name">Name</label>
+                            <label for="name">Customer Name</label>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-4">
-                        <div class="form-floating">
-                            <input type="date" class="form-control" name="date" placeholder="10/01/1996" required>
-                            <label for="date">Date</label>
-                        </div>
-                    </div>
-                    <div class="col-4">
+                    <div class="col">
                         <div class="form-floating">
                             <input type="text" class="form-control" name="contactInfo" placeholder="555-5555">
                             <label for="contactInfo">Email/Phone Number</label>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col">
                         <div class="form-floating">
                             <input type="text" class="form-control" name="address" placeholder="1111 West Broad">
                             <label for="address">Address</label>
                         </div>
                     </div>
                 </div>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" name="transactionType" placeholder="true" value="true">
-                    <label for="transactionType" class="form-check-label">Personal?</label>
+                <div class="row my-3">
+                    <div class="col-5">
+                        <label class="form-label" for="itemsOrdered" style="color: white">Items Ordered</label>
+                        <textarea class="form-control" name="itemsOrdered" rows="3" required></textarea>
+                    </div>
+                    <div class="col">
+                        <div class="row mt-5">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" name="transactionType" placeholder="true" value="true">
+                                <label for="transactionType" class="form-check-label" style="color: white">Personal?</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" name="applecare" placeholder="true" value="true">
+                                <label for="applecare" class="form-check-label" style="color: white">AppleCare?</label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-floating">
-                    <input type="number" class="form-control" name="poNumber" placeholder="111111">
-                    <label for="poNumber">PO Number</label>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="number" class="form-control" name="registerTransaction" placeholder="1375">
+                            <label for="registerTransaction">Transaction #</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="date" class="form-control" name="date" placeholder="10/01/1996" required>
+                            <label for="date">Date</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="string" class="form-control" name="estimatedDelivery" placeholder="2-3 weeks">
+                            <label for="estimatedDelivery">Estimated Delivery</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="number" class="form-control" name="poNumber" placeholder="111111">
+                            <label for="poNumber">PO #</label>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-floating">
-                    <input type="string" class="form-control" name="itemsOrdered" placeholder="Macbook">
-                    <label for="itemsOrdered">Items Ordered</label>
-                </div>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" name="applecare" placeholder="true" value="true">
-                    <label for="applecare" class="form-check-label">AppleCare?</label>
-                </div>
-                <div class="form-floating">
-                    <input type="number" class="form-control" name="registerTransaction" placeholder="1375">
-                    <label for="registerTransaction">Transaction</label>
-                </div>
-                <div class="form-floating">
-                    <input type="string" class="form-control" name="estimatedDelivery" placeholder="2-3 weeks">
-                    <label for="estimatedDelivery">Estimated Delivery</label>
-                </div>
-                <div class="form-floating">
-                    <input type="string" class="form-control" name="additionalNotes" placeholder="lorem ipsum">
-                    <label for="additionalNotes">Additional Notes</label>
+                <div class="row my-3">
+                    <div class="col-5">
+                        <label for="additionalNotes" style="color:white">Additional Notes</label>
+                        <textarea class="form-control" name="additionalNotes" rows="3"></textarea>
+                    </div>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>

@@ -1,13 +1,6 @@
-<% if(search_error != ''){ %>
+<% if(info != ''){ %>
     <div class="alert alert-primary alert-dismissible fade show" role="alert">
-        <%= search_error %>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-      </div>
-<% } %>
-
-<% if(add_error != ''){ %>
-    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-        <%= add_error %>
+        <%= info %>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
 <% } %>
@@ -19,16 +12,9 @@
       </div>
 <% } %>
 
-<% if(add_success != ''){ %>
+<% if(success != ''){ %>
     <div class="alert alert-success alert-dismissible fade show" role="alert">
-        <%= add_success %>
+        <%= success %>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
-<% } %>
-
-<% if(deleted != ''){ %>
-  <div class="alert alert-success alert-dismissible fade show" role="alert">
-      <%= deleted %>
-      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
 <% } %>
