@@ -99,3 +99,12 @@ select.minimal:focus {
   width: 25vh;
   margin: 35px 100px;
 }
+
+#customer-info-text {
+  font-weight: normal;
+}
+
+#customer-edit-button {
+  background-color: white;
+  border: none;
+}

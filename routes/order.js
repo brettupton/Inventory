@@ -50,13 +50,31 @@ router.post('/newCustomer', ensureAuthenticated, (req, res) => {
       })
 })
 
-// VIEW CUSTOMER ORDERS
+// VIEW CUSTOMER ORDERS INDEX
 router.get('/corder', (req, res) => {
   customerModel.find((err, data) => {
     if (!err) {
       res.render('view_customer.ejs', {customersArray : data});
     }
   })
+})
+
+// VIEW CUSTOMER ORDER INDIVIDUAL
+router.get('/corder/user/:id', (req, res) => {
+  customerModel.findById(req.params.id, (err, data) => {
+    if (!err) {
+      res.render('customer.ejs', { customer : data });
+    }
+  });
+})
+
+// EDIT CURRENT CUSTOMER
+router.get('/corder/edit/:id', (req, res) => {
+  customerModel.findById(req.params.id, (err, data) => {
+    if (!err) {
+      res.render('edit_customer.ejs', { customer : data });
+    }
+  });
 })
 
 module.exports = router;

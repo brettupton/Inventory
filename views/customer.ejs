@@ -1,0 +1,69 @@
+<div class="container my-5">
+    <div class="row text-center">
+        <h1><span style="color: #ffc107">RAM</span>TECH <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-apple text-warning" viewBox="0 0 16 16">
+            <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"/>
+            <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"/>
+          </svg> CUSTOMER ORDER </h1>
+    </div>
+</div>
+
+<div class="container mt-5 w-25" id="item-view">
+    <div class="row justify-content-end">
+        <div class="col-1 mx-2">
+            <a href="orders/corder/edit/<%= customer._id %>" id="customer-edit-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+            </svg></a>
+          </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <div class="row">
+                <h4><%= customer.name %></h4>
+            </div>
+            <div class="row">
+                <h6>Contact: <span id="customer-info-text"><%= customer.contactInfo %></span></h6>
+            </div>
+            <div class="row">
+                <h6>Order Placed On: <span id="customer-info-text"><%= customer.date.toDateString() %></span></h6>
+            </div>
+            <div class="row">
+                <h6>Estimated Arrival: <span id="customer-info-text"><%= customer.estimatedDelivery %></span></h6>
+            </div>
+            <div class="row mt-3">
+                <h5>Item(s) Ordered</h5>
+                <p style="white-space: pre-wrap"><%= customer.itemsOrdered %></p>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <div class="row">
+                        <h6>Personal/Departmental:</h6>
+                    </div>
+                    <div class="row">
+                        <% if (customer.transactionType === false) { %>
+                            <p>Departmental</p>
+                        <% } else { %>
+                            <p>Personal</p>
+                        <% } %>
+                    </div>
+                </div>
+                <div  class="col">
+                    <div class="row">
+                        <h6>Banner Index:</h6>
+                    </div>
+                    <div class="row">
+                        <p><%= customer.bannerIndex %></p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <h6>PO Number:</h6>
+                    </div>
+                    <div class="row">
+                        <p><%= customer.poNumber %></p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
